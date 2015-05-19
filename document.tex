@@ -22,24 +22,62 @@
 
 
 
-\documentclass[a4size] {article} 
-\usepackage{graphicx}
-\usepackage[utf8]{inputenc}
-\usepackage{float}
-\usepackage {subcaption}
+\documentclass[a4paper,11pt,oneside,openany,brazilian,
+version=last,draft=false,]{report}
 
+% \documentclass[a4paper,11pt,oneside,openany,brazilian,version=last,draft=false,]{main}
+
+
+%%******************************************************************************
+%% DOCUMENT STYLE
+%%******************************************************************************
+
+
+% \usepackage{graphicx}      % include this line if your document contains figures
+% \usepackage{natbib}        % required for bibliography
+% \usepackage{enumerate}
+% \usepackage[utf8]{inputenc}
+% \usepackage{graphicx}
+% \usepackage{float}
+% \usepackage[centerlast,small,sc]{caption}
+% \usepackage[brazilian]{babel}
+% \usepackage[none]{hyphenat}
+% \sloppy
+
+
+\usepackage{graphicx}
+\usepackage{natbib}        % required for bibliography
+\usepackage[utf8]{inputenc}
+\usepackage{mybook}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+\usepackage {subcaption}
 \usepackage{color}
 
 
+\pdfcompresslevel = 9
+\oddsidemargin = 31pt
+\topmargin = 20pt
+\headheight = 12pt
+\headsep = 25pt
+\textheight = 592pt
+\textwidth = 390pt
+\marginparsep = 10pt
+\marginparwidth = 35pt
+\footskip = 30pt
 
+\usepackage[top=1.5in, bottom=1.25in, left=0.8in, right=0.8in]{geometry}
 
 
 
 
 \begin{document}
 
-\include{front_page}
 
+
+\include{front_page}
+\begin{twocolumn}
 % \title{Relatório de Viagem}
 % \author{Julia Campana, Eduardo Elael}
 % \date{27/04/15 - 01/05/15}
@@ -49,7 +87,6 @@
 % \begin{flushright}
 %   \emph{Versão:} 07/maio/2014
 % \end{flushright}
-
 
 
 \section*{Introdução}
@@ -78,17 +115,20 @@ esclarecimento dos aspectos técnicos pertinentes ao projeto.
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}[b]{0.46\textwidth}
-\includegraphics[height=3.2cm]{Fotos/img_4836.jpg}
+%\begin{subfigure}[b]{0.46\textwidth}
+\includegraphics[width=\columnwidth]{Fotos/img_4836.jpg}
 \caption{Reunião com Rijeza e ESBR.}
 \label{fig:gull}
-\end{subfigure}%
-\quad
-\begin{subfigure}[b]{0.46\textwidth}
-\includegraphics[height=3.2cm]{Fotos/img_4881.jpg}
+%\end{subfigure}%
+%\quad
+\end{figure}
+\begin{figure}[H]
+\centering
+%\begin{subfigure}[b]{0.46\textwidth}
+\includegraphics[width=\columnwidth]{Fotos/img_4881.jpg}
 \caption{Equipe visita o galpão da Rijeza.}
 \label{fig:tiger}
-\end{subfigure}
+%\end{subfigure}
 \end{figure}
 
 % \begin{figure}[H]
@@ -97,7 +137,7 @@ esclarecimento dos aspectos técnicos pertinentes ao projeto.
 % \caption{Reunião com Rijeza e ESBR.}
 % \end{figure}
 
-Posteriormente, visitamos as instalações da Rijeza dentro da usina para
+Posteriormente, visitamos as instala\-ções da Rijeza dentro da usina para
 presenciar o funcionamento do robô que executa o \textit{hardcoating}, assim como o
 estado das pás onde o \textit{hardcoating} já havia sido aplicado. Visando compreender
 melhor o processo de metalização, suas etapas e especificidades quando realizado
@@ -105,17 +145,20 @@ sobre uma pá da turbina.
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}[b]{0.46\textwidth}
-\includegraphics[height=3.2cm]{Fotos/img_4881.jpg}
+%\begin{subfigure}[b]{0.46\textwidth}
+\includegraphics[width=\columnwidth]{Fotos/img_4881.jpg}
 \caption{Equipe do projeto EMMA visita o galpão da Rijeza para verificar o
 processo de inspeção vigente.}
 \label{fig:gull}
-\end{subfigure}%
-\quad
-\begin{subfigure}[b]{0.46\textwidth}
-\includegraphics[height=3.2cm]{Fotos/img_4858.jpg}
+%\end{subfigure}%
+%\quad
+\end{figure}
+\begin{figure}[H]
+\centering
+%\begin{subfigure}[b]{0.46\textwidth}
+\includegraphics[width=\columnwidth]{Fotos/img_4858.jpg}
 \caption{Instalações da Rijeza: Robô Industrial utilizado para aplicação de hardcoating.}
-\end{subfigure}
+%\end{subfigure}
 \end{figure}
 
 % \begin{figure}[H]
@@ -135,17 +178,20 @@ processo de inspeção vigente.}
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}[b]{0.46\textwidth}
-\includegraphics[height=3.2cm]{Fotos/img_4850.jpg}
+%\begin{subfigure}[b]{0.46\textwidth}
+\includegraphics[width=\columnwidth]{Fotos/img_4850.jpg}
 \caption{Instalações da Rijeza: secador, dosador, cilindros de gases, medidores,unidade de segurança e o console do robô.}
 \label{fig:gull}
-\end{subfigure}%
-\quad
-\begin{subfigure}[b]{0.46\textwidth}
-\includegraphics[height=3.2cm]{Fotos/img_4852.jpg}
+%\end{subfigure}%
+%\quad
+\end{figure}
+\begin{figure}[H]
+\centering
+%\begin{subfigure}[b]{0.46\textwidth}
+\includegraphics[width=\columnwidth]{Fotos/img_4852.jpg}
 \caption{Instalações da Rijeza: Maquinário utilizado, equipamentos como cooler e
 compressor ao fundo do galpão onde inspeção é realizada.}
-\end{subfigure}
+%\end{subfigure}
 \end{figure}
 
 % \begin{figure}[H]
@@ -171,16 +217,19 @@ os locais de acesso, a montagem dos andaimes e a geometria da hélice.
 
 \begin{figure}[H]
 \centering
-\begin{subfigure}[b]{0.46\textwidth}
-\includegraphics[height=3.2cm]{Fotos/img_4886.jpg}
+%\begin{subfigure}[b]{0.46\textwidth}
+\includegraphics[width=\columnwidth]{Fotos/img_4886.jpg}
 \caption{Pá já com Hardcoating aplicado.}
 \label{fig:gull}
-\end{subfigure}%
-\quad
-\begin{subfigure}[b]{0.46\textwidth}
-\includegraphics[height=3.2cm]{Fotos/img_4905.jpg}
+%\end{subfigure}%
+%\quad
+\end{figure}
+\begin{figure}[H]
+\centering
+%\begin{subfigure}[b]{0.46\textwidth}
+\includegraphics[width=\columnwidth]{Fotos/img_4905.jpg}
 \caption{Acesso a unidade geradora.}
-\end{subfigure}
+%\end{subfigure}
 \end{figure}
 
 
@@ -205,20 +254,20 @@ os locais de acesso, a montagem dos andaimes e a geometria da hélice.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{Fotos/img_4931.jpg}
+\includegraphics[width=\columnwidth]{Fotos/img_4931.jpg}
 \caption{Montagem de andaimes dentro da unidade geradora.}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{Fotos/img_4966.jpg}
+\includegraphics[width=\columnwidth]{Fotos/img_4966.jpg}
 \caption{Engenheiros medem hélices.}
 \end{figure}
 
 % -----------------------------------------------------------------
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.85\textwidth]{Fotos/img_4978.jpg}
+\includegraphics[width=\columnwidth]{Fotos/img_4978.jpg}
 \caption{Em detalhe a escoltilha de acesso superior.}
 \end{figure}
 
@@ -235,5 +284,5 @@ como soluções para a inspeção de turbinas. Realizamos as reuniões
 necessárias, a inspeção da unidade geradora, bem como conhecemos as instalações
 da Rijeza onde o hardcoating é feita. No ultimo dia organizamos tais informações
 para que sejam devidamente adicionas em nosso Relatório Técnico.
-
+\end{twocolumn}
 \end{document}
