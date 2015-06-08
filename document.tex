@@ -22,10 +22,10 @@
 
 
 
-\documentclass[a4paper,11pt,oneside,openany,brazilian,
-version=last,draft=false,]{report}
+%\documentclass[a4paper,11pt,oneside,openany,brazilian,
+%version=last,draft=false,]{report}
 
-% \documentclass[a4paper,11pt,oneside,openany,brazilian,version=last,draft=false,]{main}
+\documentclass[a4paper,11pt,oneside,openany,brazilian,version=last,draft=false,]{main}
 
 
 %%******************************************************************************
@@ -39,7 +39,8 @@ version=last,draft=false,]{report}
 % \usepackage[utf8]{inputenc}
 % \usepackage{graphicx}
 % \usepackage{float}
-% \usepackage[centerlast,small,sc]{caption}
+\usepackage[centerlast,small,sc]{caption}
+\setlength{\captionmargin}{30pt}
 % \usepackage[brazilian]{babel}
 % \usepackage[none]{hyphenat}
 % \sloppy
@@ -54,6 +55,7 @@ version=last,draft=false,]{report}
 \usepackage{pdfpages}
 \usepackage {subcaption}
 \usepackage{color}
+\sloppy  
 
 
 \pdfcompresslevel = 9
@@ -89,11 +91,11 @@ version=last,draft=false,]{report}
 % \end{flushright}
 
 
-\section*{Introdução}
+\section{Introdução}
 A viagem a Jirau realizada entre os dias 27 de Abril e 01 de Maio teve como
 objetivo coletar informações para o a fase conceitual do Projeto EMMA. 
 
-\section*{Objetivo de Viagem}
+\section{Objetivo de Viagem}
 \begin{itemize}
   \item Breve apresentação SOTA (Estado da Arte de sistema robóticos
   seme\-lhantes);
@@ -107,7 +109,7 @@ artigo)
 \end{itemize}
 
 
-\section*{Execução}
+\section{Execução}
 Em um primeiro momento foi realizada a reunião para a apresentação de estado da
 arte de sistemas robóticos que executam tarefas semelhantes às que serão
 realizadas, seguida de perguntas e respostas aos técnicos da Rijeza e ESBR para
@@ -277,7 +279,7 @@ disponíveis no mercado e todas suas possíveis aplicações no espaço da unida
 gerador onde a inspeção deve acontecer. Em seguida, levantamos hipóteses sobre
 as possíveis vias de entradas e suas implicações. 
 
-\section*{Resultado}
+\section{Resultado}
 A viagem se mostrou de grande relevância para a viabilidade técnica do projeto,
 uma vez que nos deu parâmetros para formular os conceitos que serão explorados
 como soluções para a inspeção de turbinas. Realizamos as reuniões
